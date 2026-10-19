@@ -30,14 +30,19 @@ Judge agreement with my hand labels: [Z]% (30 samples).
 Full tables are in REPORT.md.
 
 Design decisions
+
 Every harm has a boundary, so testers and graders agree on what counts, and so over-refusal can be measured, not just failures to block.
 Blind hand labels: I graded without seeing the judge's labels, so its answers couldn't bias mine.
 Contract tests ensure every tactic in the taxonomy has a matching mutator function and every seed maps to a defined harm.
 Raw model responses stay off GitHub. Only aggregate rates are published.
+
+
 Limitations and next steps
 A Claude model judges Claude models, which may bias grades. Next: add a judge from a different provider.
 Single-message attacks only. Next: multi-turn escalation and task splitting.
-12 seeds is a small sample. Next: more seeds per harm and confidence intervals.
+12 seeds is a small sample. 
+
+Next: more seeds per harm and confidence intervals.
 Obfuscation only swaps lowercase letters.
 
 Out of scope: Child safety, self-harm, violent extremism, and sexual content are deliberately excluded. They require specialist handling and shouldn't live in a public repo.
