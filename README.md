@@ -13,7 +13,8 @@ Runner. Sends all 72 prompts to two Claude models, with retries and resume suppo
 LLM judge. A model grades each response as complied, partial, or refused, using a written rubric.
 Human validation. I blind-labeled a random sample of 30 responses and measured how often the judge agreed with me.
 Report. Attack success rate by tactic and by harm, plus over-refusal rate per model.
-Key results
+
+Key results - TBA
 Most effective tactic: [tactic], succeeding [X]% of the time on [model].
 Weakest harm area: [harm].
 Over-refusal on honest questions: [X]% for [model], [Y]% for [model].
@@ -31,8 +32,7 @@ A Claude model judges Claude models, which may bias grades. Next: add a judge fr
 Single-message attacks only. Next: multi-turn escalation and task splitting.
 12 seeds is a small sample. Next: more seeds per harm and confidence intervals.
 Obfuscation only swaps lowercase letters.
-Out of scope
 
-Child safety, self-harm, violent extremism, and sexual content are deliberately excluded. They require specialist handling and shouldn't live in a public repo.
+Out of scope: Child safety, self-harm, violent extremism, and sexual content are deliberately excluded. They require specialist handling and shouldn't live in a public repo.
 
 Tech: Python, Anthropic API, pandas, PyYAML, pytest, GitHub Actions.
