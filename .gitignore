@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+data/results.jsonl
+data/graded.jsonl
+data/hand_labels.csv
