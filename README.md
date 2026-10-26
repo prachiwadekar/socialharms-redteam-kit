@@ -1,7 +1,5 @@
 # Social Harms Red-Team Kit
 
-![tests](https://github.com/prachiwadekar/socialharms-redteam-kit/actions/workflows/tests.yml/badge.svg)
-
 An automated red-teaming pipeline that tests how LLMs handle social media harms, and whether they over-refuse honest users, using a harm × tactic taxonomy, an LLM judge, and a scorecard.
 
 **Start here:** the [one-page project overview](OVERVIEW.md) covers why I built it, how it works, design decisions, and limitations. Full results tables are in [REPORT.md](REPORT.md).
